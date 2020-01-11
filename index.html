@@ -1,52 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | [Pricing-component]</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <body>
+    <div class="background">
+      <header class="main-header">
+        <h1 class="main-header__title">Our Pricing</h1>
+        <span class="main-header__text">Annually</span>
+        <label class="main-header__toggle-switch">
+          <input type="checkbox" />
+          <span class="main-header__toggle-switch-slider"></span>
+        </label>
+        <span class="main-header__text">Monthly</span>
+      </header>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <div class="card-container">
+        <div class="card-basic">
+          <h2 class="card-basic__title">Basic</h2>
+          <div class="card-basic__price">
+            <span class="card-basic__price__dollar-sign">&dollar;</span>19.99
+          </div>
+          <!--<div class="card-basic__price">
+            <span class="card-basic__price__dollar-sign">&dollar;</span>199.99
+          </div>-->
+          <div class="card-basic__storage">500 GB Storage</div>
+          <div class="card-basic__users">2 Users Allowed</div>
+          <div class="card-basic__gb">Send up to 3 GB</div>
+          <button class="card-basic__btn" type="submit">Learn More</button>
+        </div>
 
-  Our Pricing
-  Annually
-  Monthly
+        <div class="card-professional">
+          <h2 class="card-professional__title">Professional</h2>
+          <div class="card-professional__price">
+            <span class="card-professional__price__dollar-sign">&dollar;</span
+            >24.99
+          </div>
+          <!--<div class="card-basic__price">
+            <span class="card-basic__price__dollar-sign">&dollar;</span>249.99
+          </div>-->
+          <div class="card-professional__storage">1 TB Storage</div>
+          <div class="card-professional__users">5 Users Allowed</div>
+          <div class="card-professional__gb">Send up to 10 GB</div>
+          <button class="card-professional__btn" type="submit">
+            Learn More
+          </button>
+        </div>
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+        <div class="card-master">
+          <h2 class="card-master__title">Master</h2>
+          <div class="card-master__price">
+            <span class="card-master__price__dollar-sign">&dollar;</span>39.99
+          </div>
+          <!--<div class="card-basic__price">
+            <span class="card-basic__price__dollar-sign">&dollar;</span>399.99
+          </div>-->
+          <div class="card-master__storage">2 TB Storage</div>
+          <div class="card-master__users">10 Users Allowed</div>
+          <div class="card-master__gb">Send up to 20 GB</div>
+          <button class="card-master__btn" type="submit">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </body>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="footer-frontendmentor">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by <a href="https://github.com/sonickonic">sonickonic</a>.
   </div>
-</body>
 </html>
