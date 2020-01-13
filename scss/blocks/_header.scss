@@ -63,3 +63,9 @@
     transform: translateX(-22px);
   }
 }
+
+@include screen-m {
+  .main-header {
+    padding: 70px 0 65px;
+  }
+}
