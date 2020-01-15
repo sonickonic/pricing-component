@@ -158,6 +158,7 @@ input:checked + .main-header__toggle-switch-slider:before {
   border-radius: 5px;
   color: white;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .card-basic__btn:active,
 .card-master__btn:active,
@@ -199,7 +200,7 @@ input:checked + .main-header__toggle-switch-slider:before {
   background-image: none;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .card-container {
     display: flex;
     flex-direction: row;
